@@ -1,0 +1,129 @@
+#p03_slider {
+  background-color: #e0dcdc;
+
+  section {
+    height: 500px;
+    display: flex;
+    gap: 16px;
+    padding: 50px;
+
+    article {
+      box-shadow: black -8px 8px 8px;
+      position: relative;
+
+      &.c1 {
+        background-image: url("Assets/Images/03_slider/dev.png");
+      }
+
+      &.c2 {
+        background-image: url("Assets/Images/03_slider/des.png");
+      }
+
+      &.c3 {
+        background-image: url("Assets/Images/03_slider/dev.png");
+      }
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 180px;
+      height: 100%;
+      display: flex;
+      align-items: end;
+      padding: 16px;
+      transition: width 00.8s ease-in-out;
+
+
+      .overlay {
+        height: 10%;
+        transition: margin-bottom 0.8s ease-in-out, height 0.8s ease-in-out;
+        margin-bottom: 0;
+        width: fit-content;
+        max-width: 300px;
+        display: flex;
+        background-color: rgba(211, 208, 208);
+        padding: 8px;
+        border-radius: 5px;
+        gap: 16px;
+        justify-content: left;
+        align-items: center;
+
+
+        .icon {
+          object-fit: contain;
+
+          img {
+              transition: height 0.8s ease-in-out;
+            height: 32px;
+
+
+          }
+        }
+        h3 {
+          font-size: 1rem;
+          transition: font-size 00.8s ease-in-out;
+        }
+        p, span {
+          position: absolute;
+          opacity: 0;
+          transition: opacity 0s 0s ease-in-out;
+
+        }
+      }
+
+      &.active {
+        width: 600px;
+
+
+        .overlay {
+          margin-bottom: 284px;
+          height: 20%;
+
+          .icon {
+            img {
+              height: 32px;
+            }
+          }
+
+          h3 {
+            font-size: 1.5rem;
+
+          }
+
+          p {
+            display: inline;
+            opacity: 1;
+            position: absolute;
+            bottom: 128px;
+            left: 16px;
+            right: 128px;
+            font-size: 1.5rem;
+            padding: 16px;
+            border-radius: 15px;
+            color: black;
+            background-color: rgb(211, 208, 208);
+
+          }
+
+          span {
+            color: black;
+            opacity: 1;
+            font-size: 1.5rem;
+            display: block;
+            position: absolute;
+            bottom: 32px;
+            left: 16px;
+            padding: 16px;
+            background-color: #deebb0;
+
+          }
+
+          p, span {
+            transition: opacity .8s 0.4s ease-in-out;
+          }
+        }
+
+      }
+    }
+  }
+}

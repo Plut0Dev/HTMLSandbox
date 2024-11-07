@@ -1,0 +1,14 @@
+body{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+
+}
+.pdev-sb-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid black;
+  margin:50px;
+}
