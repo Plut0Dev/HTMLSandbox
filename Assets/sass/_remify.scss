@@ -1,0 +1,8 @@
+@function remify($pixels) {
+  @if(unitless($pixels)) {
+    @return $pixels / 16 * 1rem;
+
+  }@else{
+    @warn "Rem: Bitte ohne Einheit übergeben"
+  }
+}

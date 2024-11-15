@@ -1,0 +1,34 @@
+// Import function to translate px to rem
+@import "remify";
+//Project
+#p05_weather_banner{
+  //Container
+  .weather_banner{
+    background-color: rgb(147, 17, 17);
+    color: white;
+    padding: remify(32);
+    border-radius: remify(64);
+    font-size: remify(64);
+    display: flex;
+    gap: remify(64);
+    align-items: center;
+    .weather_condition{
+      font-size: remify(32);
+      margin-left: remify(-16) ;
+    }
+    .weather_icon_box{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .weather_icon{
+        visibility: hidden;
+        position: absolute;
+        &.activeIcon{
+          visibility: visible;
+        }
+      }
+    }
+
+  }
+}

@@ -4,12 +4,15 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "browser-sync start -s -f"
+    "dev": "npm run sass & npm run bs-b",
+    "sass": "sass --watch style.scss style.css",
+    "bs-b": "browser-sync start -s -f \"**/*\" -c bs-config.js --no-notify"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
     "browser-sync": "^3.0.3"
   }
 }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sandbox</title>
+    <script src="https://kit.fontawesome.com/cfb7b5dc8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
@@ -12,8 +14,8 @@
     <h1>Hallo Welt. Dies ist meine Webdev Sandbox</h1>
 </header>
 
-<!--Einzelne Projekte-->
-<section class="pdev-sb-project" id="01_pdev-progress_bar-1">
+<!--Past Projects-->
+<section class="pdev-sb-project" id="p01_project_progress_bar-1">
     <progress value="32" max="100"></progress>
 </section>
 <section class="pdev-sb-project" id="p02_checkbox">
@@ -29,7 +31,6 @@
 
 
 </section>
-<!--    Aktuelles Projekt-->
 <section class="pdev-sb-project" id="p03_slider">
 
     <section id="card_slider">
@@ -39,7 +40,7 @@
             <div class="overlay">
 
                 <div class="icon">
-                    <img src="Assets/Icons/dev-icon-37.svg" alt="">
+                    <i class="fa-solid fa-sun"></i>
                 </div>
                 <h3>Developer</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt enim quo voluptatibus!</p>
@@ -52,10 +53,11 @@
             <div class="overlay">
 
                 <div class="icon">
-                    <img src="Assets/Icons/dev-icon-37.svg" alt="">
+                    <i class="fa-solid fa-sun"></i>
                 </div>
                 <h3>Designer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur  assumenda culpa dicta dolorum laborum quas qui unde, vitae. Ipsam, veniam!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur assumenda culpa dicta dolorum laborum quas qui unde, vitae.
+                    Ipsam, veniam!</p>
                 <span>learn more</span>
             </div>
         </article>
@@ -65,7 +67,7 @@
             <div class="overlay">
 
                 <div class="icon">
-                    <img src="Assets/Icons/dev-icon-37.svg" alt="">
+                    <i class="fa-solid fa-sun"></i>
                 </div>
 
                 <h3>Artist</h3>
@@ -76,8 +78,44 @@
 
     </section>
 </section>
+<section class="pdev-sb-project" id="p04_project_expand_button">
 
 
+    <div class="expand_button">
+        <button class="p04_playbutton p04_btn1 p04_actbtn">
+            <i class="ph_icon fa-solid fa-play"></i>
+            <i class="icon fa-brands fa-spotify"></i>
+        </button>
+        <button class="p04_playbutton p04_btn2">
+            <i class="icon fa-brands fa-apple"></i>
+        </button>
+        <button class="p04_playbutton p04_btn3">
+            <i class="icon fa-brands fa-youtube"></i>
+        </button>
+
+    </div>
+</section>
+<!--Current Project-->
+
+
+<section class="pdev-sb-project" id="p05_weather_banner">
+    <div class="weather_banner">
+        <p class="weather_location">Location</p>
+        <p class="weather_temperature">Temperature</p>
+        <div class="weather_icon_box">
+            <i class="weather_icon sun fa-solid fa-sun"></i>
+            <i class="weather_icon rain fa-solid fa-cloud-showers-heavy"></i>
+            <i class="weather_icon cloud fa-solid fa-cloud"></i>
+            <i class="weather_icon snow fa-solid fa-snowflake"></i>
+            <i class="weather_icon storm fa-solid fa-cloud-bolt "></i>
+            <i class="weather_icon mist fa-solid fa-smog "></i>
+
+        </div>
+        <p class="weather_condition">Condition</p>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="Assets/js/main.js" type="module"></script>
 
 </body>

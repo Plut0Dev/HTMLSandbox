@@ -1,4 +1,5 @@
 .env
+dotEnv.js
 /node_modules
 bs-config.js
 /Assets/Icons/*
